@@ -1,6 +1,6 @@
 seconds_unit = "seconds"
 seconds_calculation= 24*60*60
-user_input=input("enter the element\n")
+user_input=input("enter the element\n >>")
 
 def seconds_cal(user_input):
     return(f"the {user_input} days has {seconds_calculation} {seconds_unit}")
@@ -16,8 +16,6 @@ def validation_execute():
             print("no zero's please..")
         elif usr_input_number<0:
             print("no negatives dattabayo..")
-        elif user_input =="*"or"/"or"-"or"+"or"!"or"@"or"#"or"$"or"%"or"^"or"&"or"()"or"=":
-            print("no characters please")
         else:
             print("invalid number entered")
     except UnboundLocalError:
@@ -27,6 +25,7 @@ def validation_execute():
             print("hello")
 
 validation_execute()
+print("thanks for your time!!")
 
 
 
